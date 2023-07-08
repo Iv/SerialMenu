@@ -143,7 +143,10 @@ constexpr char SERIAL_MENU_COPYRIGHT[] =
 // drivers. I would have to figure out how to do that (template?)
 ///////////////////////////////////////////////////////////////////////////////
 
+#ifndef SERIALMENU_DISABLE_PROGMEM_SUPPORT
 #include <avr/pgmspace.h>
+#endif
+
 #include <HardwareSerial.h>
 
 ///////////////////////////////////////////////////////////////////////////////
